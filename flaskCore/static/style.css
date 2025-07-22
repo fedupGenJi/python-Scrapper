@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#laptop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.laptop-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+  width: 280px;
+  text-align: center;
+}
+
+.laptop-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.laptop-card h2 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.laptop-card p {
+  margin: 4px 0;
+  color: #333;
+}
