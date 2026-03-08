@@ -13,8 +13,8 @@ This is a Python-based scraper and web app project. It does the following:
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/your-username/laptop-scraper.git
-cd laptop-scraper
+git clone https://github.com/fedupGenJi/python-Scrapper.git
+cd python-Scrapper
 ```
 
 ### 2. Set up `.env`
