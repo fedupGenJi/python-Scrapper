@@ -41,6 +41,8 @@ pip install -r requirements.txt
 python demo.py
 ```
 
+Make sure the database schema says public else its should explictily mark to a certain schema.
+
 ### Step 2: Run scraper + insert into database
 
 ```bash
@@ -48,6 +50,7 @@ python databasepy.py
 ```
 
 This will:
+
 - Read rows from the Kaggle dataset
 - Clean/normalize fields
 - Scrape image URLs from Flipkart links
@@ -79,7 +82,6 @@ You’ll see a beautiful gallery of laptops with the scraped data and images.
 
 ## 📸 Screenshots
 
-_![alt flask_app](image.png)_
-_![alt total_lap](image-1.png)_
+
 
 ---

@@ -10,6 +10,12 @@ DATABASE = os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE)
 
+with engine.connect() as conn:
+    print("Database:", conn.execute(text("SELECT current_database()")).scalar())
+    print("User:", conn.execute(text("SELECT current_user")).scalar())
+    print("Schema:", conn.execute(text("SELECT current_schema()")).scalar())
+    print("Search path:", conn.execute(text("SHOW search_path")).scalar())
+
 drop_tables_sql = """
 DROP TABLE IF EXISTS laptop_side_images CASCADE;
 DROP TABLE IF EXISTS laptop_details CASCADE;
